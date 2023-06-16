@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function third() {
+            location.href = '/third'
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Main Page</h1>
+    <p>메인 페이지입니다.</p>
+    <p><a href="/login">로그인 부분</a></p>
+    <!-- 절대경로 하이퍼링크 생성 -->
+    <a href="http://www.google.com">Google</a>
+    <!-- 상대경로 하이퍼링크 -->
+    <a href="/second">Second Page</a>
+    <!-- javascript를 이용한 페이지 이동 -->
+    <button onclick="third()">Third Page</button>
+</body>
+
+</html>
