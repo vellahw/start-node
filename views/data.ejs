@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        
-    </script>
+    <style>
+        p {
+            font-weight: bold;
+        }
+
+        .sub {
+            border: 1px solid #626262;
+            color: #626262;
+            border-radius: 10px;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 5%;
+        }
+    </style>
 </head>
 <body>
     <p>get 방식으로 데이터 보내기</p>
     <form action="/data" method="get">
         <input type="text" name="_id"><br>
         <input type="password" name="_pass"><br>
-        <input type="submit">
+        <input type="submit" class="sub">
     </form>
 
     <p>post 방식으로 데이터 보내기</p>
     <form action="/data2" method="post">
         <input type="text" name="_id"><br>
         <input type="password" name="_pass"><br>
-        <input type="submit">
+        <input type="submit"  class="sub">
     </form>
 </body>
 </html>
