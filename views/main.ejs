@@ -10,18 +10,30 @@
             location.href = '/third'
         }
     </script>
+    <style>
+        .btn {
+            border: 2px solid #000;
+            color: #000;
+            border-radius: 10px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        a {
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Main Page</h1>
-    <p>메인 페이지입니다.</p>
-    <p><a href="/login">로그인 부분</a></p>
-    <!-- 절대경로 하이퍼링크 생성 -->
-    <a href="http://www.google.com">Google</a>
+    <p><a href="/login">로그인</a></p>
+    <!-- 절대경로 하이퍼링크 생성
+    <a href="http://www.google.com">Google</a><br> -->
     <!-- 상대경로 하이퍼링크 -->
-    <a href="/second">Second Page</a>
+    <a href="/second">Second Page</a><br><br>
     <!-- javascript를 이용한 페이지 이동 -->
-    <button onclick="third()">Third Page</button>
+    <button onclick="third()" class="btn">Third Page</button>
 </body>
 
 </html>
